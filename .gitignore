@@ -1,7 +1,38 @@
 # Xcode
+#
+# Based on GitHub's Swift.gitignore and common Xcode leftovers.
+# Do not ignore *.xcodeproj — those projects belong in the repo.
+
+## Build and user state
 DerivedData/
 xcuserdata/
 *.xcuserstate
-.DS_Store
 build/
 *.moved-aside
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Swift Package Manager
+.build/
+.swiftpm/xcode/xcuserdata/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+
+## Carthage
+Carthage/Build/
+
+## fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+## macOS
+.DS_Store

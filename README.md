@@ -1,50 +1,50 @@
-# Apple Swift development
+# Apple platform development
 
-Apple platform development in Swift and SwiftUI across iOS, macOS, and visionOS.
+Apple platform development in Swift and SwiftUI: iOS, macOS, and visionOS apps using SwiftData, Core ML, Image Playground, Foundation Models, and spatial computing.
 
-Work here uses SwiftData, Core ML, Image Playground, Foundation Models, and spatial computing on visionOS.
+This repository is development work on Apple platforms. It is not an Apple product, not Apple-affiliated, and not a credential. It is not a Certiport exam and not Apple Teacher.
 
-This is development work on Apple platforms. It is not an Apple credential, not a Certiport exam, and not Apple Teacher.
-
-Xcode projects live under `apps/`. The public site is in `docs/`.
+The public landing page lives in [`docs/`](docs/) for GitHub Pages. Xcode projects live under [`apps/`](apps/).
 
 ## Apps
 
+Each name matches a folder under `apps/`.
+
 ### iOS
 
-- **MicroAdventures** — MapKit explorer for nearby outdoor micro-adventures, filtered by category and effort.
-- **WeatherForecast** — Simple SwiftUI forecast row with sun/rain day tiles and high/low temperatures.
-- **OnboardingFlow** — Multi-page welcome and feature-card onboarding flow.
-- **DiceRoller** — Interactive dice roller with per-die views.
-- **Pick-a-Pal** — Name list with a random pal picker.
-- **FriendsFavoriteMovies** — SwiftData app that tracks friends and their favorite movies.
-- **Alphabetizer** — Drag-and-drop tile game that puts words in alphabetical order.
-- **ScoreKeeper** — Multiplayer scoreboard with game settings and Swift Testing coverage.
-- **Birthdays** — SwiftData birthday list for friends.
-- **GratefulMoments** — Gratitude journal with streaks and achievement badges.
-- **HikingSurvey** — Hiking comment survey scored with Natural Language sentiment.
-- **SignDecoder** — Vision text recognition on trail-sign photos, with translation.
-- **TrailAnalyzerApp** — Core ML trail-risk predictions from distance, elevation, terrain, and hazards.
-- **GenerableQuiz** — On-device quiz generation with Foundation Models.
+- [MicroAdventures](apps/MicroAdventures) — MapKit + SwiftUI, filters, floating cards
+- [WeatherForecast](apps/WeatherForecast) — custom views, structures, properties
+- [OnboardingFlow](apps/OnboardingFlow) — TabView onboarding, layout and style
+- [DiceRoller](apps/DiceRoller) — buttons and `@State`
+- [Pick-a-Pal](apps/Pick-a-Pal) — lists, TextField, bindings
+- [FriendsFavoriteMovies](apps/FriendsFavoriteMovies) — SwiftData, navigation, relationships
+- [Alphabetizer](apps/Alphabetizer) — `@Observable`, environment sharing
+- [ScoreKeeper](apps/ScoreKeeper) — custom types, Swift Testing
+- [Birthdays](apps/Birthdays) — SwiftData persistence
+- [GratefulMoments](apps/GratefulMoments) — PhotosPicker, SwiftData, accessibility, localization
+- [HikingSurvey](apps/HikingSurvey) — Natural Language sentiment, Swift Charts
+- [SignDecoder](apps/SignDecoder) — Vision text recognition, Translation
+- [TrailAnalyzerApp](apps/TrailAnalyzerApp) — Core ML custom model in SwiftUI
+- [GenerableQuiz](apps/GenerableQuiz) — Foundation Models, `@Generable`
 
 ### Create ML
 
-- **TrailAnalyzer** — Create ML training data, `train.swift`, and Core ML models for trail-risk regression (not an iOS app).
+- [TrailAnalyzer](apps/TrailAnalyzer) — Create ML training, `.mlmodel` (folder, not an iOS app)
 
 ### macOS
 
-- **ImageGenerator** — Image Playground app that composes recipe and ingredient concepts into generated images.
+- [ImageGenerator](apps/ImageGenerator) — Image Playground, CommandMenu
 
 ### visionOS
 
-- **TunnelOfCircles** — Spatial tunnel of 3D-padded circles with depth and color controls.
-- **LabelMaker** — Ornament-driven label editor that opens additional windows for created labels.
-- **SeaCreatures** — RealityKit volumetric windows for 3D sea-creature models.
+- [TunnelOfCircles](apps/TunnelOfCircles) — windows, Grid, 3D padding
+- [LabelMaker](apps/LabelMaker) — ornaments, multiple WindowGroups
+- [SeaCreatures](apps/SeaCreatures) — volumetric windows, RealityKit
 
 ## Open and build
 
 1. Install [Xcode](https://developer.apple.com/xcode/).
-2. Open the `.xcodeproj` in the app folder you want to run. For Create ML training, see `apps/TrailAnalyzer/` (`train.swift` plus CSV and `.mlmodel` files).
+2. Open the `.xcodeproj` in the app folder you want to run. For Create ML training, see `apps/TrailAnalyzer/`.
 3. Choose a Simulator (or a generic destination) and build. `CODE_SIGNING_ALLOWED=NO` is fine. An Apple Developer Program membership is not required.
 
 ## License
